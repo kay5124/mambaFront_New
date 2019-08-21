@@ -1,0 +1,138 @@
+.main {
+  position: relative;
+  .storeGame {
+    height: auto;
+    .topTitleDiv {
+      text-align: center;
+      padding: 50px 0;
+    }
+    .topTitle {
+      color: rgb(246, 147, 53);
+    }
+    .gameList {
+      //   text-align: center;
+      margin: 0 auto;
+      width: 100%;
+      @media only screen and (max-width: 1200px) {
+        width: 90%;
+      }
+      @media only screen and (max-width: 968px) {
+        width: 80%;
+      }
+      @media only screen and (max-width: 768px) {
+        text-align: center;
+        width: 62%;
+      }
+      @media only screen and (max-width: 468px) {
+        width: 100%;
+      }
+    }
+    .gameDiv {
+      padding-bottom: 30px;
+      background-color: white;
+      display: inline-block;
+      position: relative;
+      margin-left: 6px;
+      margin-right: 5px;
+      margin-bottom: 15px;
+      text-align: center;
+      border-radius: 5px;
+      box-shadow: 0 0 10px rgb(188, 188, 188);
+      @media only screen and (max-width: 768px) {
+        width: 309.37px;
+      }
+      // figure.sixteen-nine-img {
+      //   width: 100%;
+      //   overflow: hidden;
+      //   margin: 0;
+      //   padding-top: 56.25%;
+      //   position: relative;
+      // }
+      // figure.sixteen-nine-img img {
+      //   position: absolute;
+      //   top: 50%;
+      //   left: 50%;
+      //   width: 100%;
+      //   transform: translate(-50%, -50%);
+      // }
+      .gameImgArea {
+        position: relative;
+        @media only screen and (max-width: 768px) {
+          width: 100%;
+          overflow: hidden;
+          margin: 0;
+          padding-top: 56.25%;
+        }
+        .gameImg {
+          max-width: 100%;
+          height: auto;
+          @media only screen and (max-width: 768px) {
+            position: absolute;
+            top: 50%;
+            left: 50%;
+            width: 100%;
+            transform: translate(-50%, -50%);
+          }
+        }
+        .imgFixing {
+          width: 60%;
+          height: auto;
+          position: absolute;
+          top: 20%;
+          left: 20%;
+          z-index: 999;
+          @media (max-width: 768px) {
+            width: 50%;
+            top: 7%;
+            left: 25%;
+          }
+        }
+      }
+      .gameNameArea {
+        padding: 25px 0;
+      }
+      .serviceBtn {
+        .btn {
+          display: inline-block;
+          width: 40%;
+          border-radius: 50px;
+          border: 1px black solid;
+          margin: 0 10px;
+        }
+        .web {
+          color: white;
+          border: 4px solid #e0e4e0;
+          box-shadow: 0 0 0 4px #f1f3f1;
+          background-color: #bac1b8;
+          &:hover {
+            background-color: #c2c7c1;
+          }
+        }
+        .store {
+          color: white;
+          border: 4px solid #fbcfa6;
+          box-shadow: 0 0 0 4px #fde9d7;
+          background-color: #f69335;
+          &:hover {
+            background-color: #ffa24a;
+          }
+        }
+      }
+    }
+    .moreGame {
+      text-align: center;
+      margin: 50px auto;
+      .btn {
+        width: 180px;
+        color: white;
+        border-radius: 50px;
+        border: 4px solid #fbcfa6;
+        box-shadow: 0 0 0 4px #fde9d7;
+        background-color: #f69335;
+        &:hover {
+          background-color: #ffa24a;
+        }
+      }
+    }
+  }
+}

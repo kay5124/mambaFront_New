@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    @@include('./templete/_head.html')
+
+    <title>MAMBA</title>
+
+    <script>
+        // var isShowMenu = false;
+        $(document).ready(function () {
+            initPage(location.pathname);
+        });
+
+    </script>
+</head>
+
+<body>
+    @@include('./templete/header/head.html')
+    @@include('./templete/banner/banner.html')
+    <main id="mainContent">
+        <img class="bgLeave" src="./images/bg_leaves.png" />
+        <div class="topDeco">
+            <img src="./images/bg_top_deco.png" />
+        </div>
+        <div class="main container" style="padding:0;">
+            @@include('./templete/Page/storeGameList/storeGameList.html')
+        </div>
+        <div class="downDeco">
+            <img src="./images/bg_bottom_deco.png" />
+        </div>
+    </main>
+    @@include('./templete/footer/footer.html')
+</body>
+
+</html>

@@ -1,0 +1,316 @@
+.banner {
+    height: 300px;
+    background-color: #F2F2F2;
+}
+
+.accountArea {
+    position: relative;
+    margin-bottom: 40px;
+    input {
+        width: 300px;
+        height: 44px;
+        margin-left: auto;
+        margin-right: auto;
+    }
+    .placeholder {
+        font-size: 14px;
+        position: absolute;
+        top: -10px;
+        margin-left: 8px;
+        color: #65666D;
+        background-color: rgba(255, 255, 255, 1);
+    }
+    .prompt {
+        width: 300px;
+        text-align: left;
+        margin-left: auto;
+        margin-right: auto;
+        color: #E64E4D;
+        font-size: 14px;
+        img {
+            width: 19px;
+            height: 19px;
+            margin: 0;
+            vertical-align: middle;
+        }
+    }
+    .VeriftyBtn{
+        position: absolute;
+        top:5px;
+        right: 26%;
+        cursor: pointer;
+        width: 118px;
+        height: 38px;
+        color: white;
+        background-color: #A1A1A1;
+        border-radius: 50px;
+        border: 1px solid #BCBCBC;
+        box-shadow: none;
+        font-size: 16px;
+        &:hover {
+            background-color: #BCBCBC;
+        }
+    }
+}
+
+.loginArea {
+    text-align: center;
+    background-color: white;
+    h2 {
+        padding: 50px 0;
+    }
+    .forgetPwd {
+        cursor: pointer;
+        color: #65666D;
+        text-decoration: underline;
+    }
+    .loginBtn {
+        cursor: pointer;
+        width: 300px;
+        height: 38px;
+        color: white;
+        background-color: #A1A1A1;
+        border-radius: 50px;
+        box-shadow: none;
+        border: 0;
+        margin: 20px 0;
+        &:hover {
+            background-color: #BCBCBC;
+        }
+    }
+    .line {
+        margin-left: auto;
+        margin-right: auto;
+        margin-top: 20px;
+        margin-bottom: 50px;
+        height: 0.5px;
+        width: 302px;
+        background-color: black;
+        position: relative;
+        .placeholder {
+            font-size: 20px;
+            position: absolute;
+            top: -15px;
+            margin-left: -40px;
+            background-color: rgba(255, 255, 255, 1);
+        }
+    }
+    img {
+        margin: 0 20px;
+    }
+    .fbLogin {
+        height: 50px;
+        width: 50px;
+    }
+    .googleLogin {
+        height: 50px;
+        width: 50px;
+    }
+    .registerArea {
+        margin-top: 50px;
+        padding-bottom: 50px;
+        a {
+            cursor: pointer;
+            color: #65666D;
+            text-decoration: underline;
+        }
+    }
+}
+
+.line {
+    height: 3px;
+    width: 500px;
+    background-color: #797979;
+    margin-left: auto;
+    margin-right: auto;
+    position: relative;
+    .stepCircle {
+        border: 3px solid #797979;
+        height: 57px;
+        width: 57px;
+        line-height: 57px;
+        border-radius: 50%;
+        display: inline-block;
+        position: absolute;
+        top: -30px;
+        background-color: rgba(255, 255, 255, 1);
+        font-size: 24px;
+        color: #666666;
+    }
+    .stepText {
+        position: absolute;
+        top: 40px;
+        font-size: 16px;
+        color: #666666;
+    }
+    .one {
+        left: 0;
+    }
+    .two {
+        left: 23%;
+    }
+    .three {
+        left: 45%;
+    }
+    .four {
+        left: 67%;
+    }
+    .five {
+        right: 0;
+    }
+    .nowStep {
+        background-color: #666666;
+        color: white !important;
+    }
+    .textOne {
+        left: -3%;
+    }
+    .textTwo {
+        left: 20%;
+    }
+    .textThree {
+        left: 42.5%;
+    }
+    .textFour {
+        left: 66.5%;
+    }
+    .textFive {
+        right: 0%;
+    }
+}
+
+
+.MemberArea {
+    padding: 100px 0;
+    text-align: center;
+    background-color: white;
+    @media screen and (max-width: 500px) {
+        padding-top: 50px;
+    }
+    h1 {
+        margin: 50px 0;
+    }
+    .termCircle {
+        @media screen and (max-width: 500px) {
+            display: none;
+        }
+        margin-left: auto;
+        margin-right: auto;
+        margin-bottom: 100px;
+    }
+    .termsImgArea {
+        margin-left: auto;
+        margin-right: auto;
+        margin-bottom: 50px;
+        width: 70%;
+        height: 655px;
+        overflow-y: scroll;
+        @media screen and (max-width: 968px) {
+            width: 98%;
+        }
+        img {
+            width: 100%;
+            height: 7517px;
+        }
+    }
+    .nextStepBtn {
+        cursor: pointer;
+        width: 300px;
+        height: 38px;
+        color: gray;
+        background-color: lightgray;
+        border-radius: 50px;
+        border: 1px solid #BCBCBC;
+        margin: 50px 0;
+        &:hover {
+            background-color: #BCBCBC;
+        }
+    }
+    .enable{
+        background-color: #A1A1A1;
+        color: white;
+    }
+    .haveAcArea {
+        padding-bottom: 50px;
+        a {
+            cursor: pointer;
+            color: #65666D;
+            text-decoration: underline;
+        }
+    }
+    
+}
+
+.userData{
+    div{
+        margin-bottom: 15px;
+    }
+    .prompt{
+        width: 308px;
+    }
+}
+
+.veriftyPointArea{
+    width: 40%;
+    margin: 0 auto;
+    text-align: left;
+}
+
+.successArea{
+    padding: 50px 0;
+    text-align: center;
+    background-color: white;
+    font-size: 16px;
+    color: #65666D !important;
+    .iconCircle{
+        border: 1px solid #BCBCBC;
+        margin: 50px auto;
+        width: 126px;
+        height: 126px;
+        border-radius: 50%;
+        line-height: 126px;
+        img{
+            width: 126px;
+            height: 126px;
+            border-radius: 50%;
+        }
+    }
+    .text{
+        line-height: 25px;
+        a{
+            color: #65666D !important;
+        }
+    }
+    .back{
+        cursor: pointer;
+        margin: 50px 0;
+        width: 300px;
+        height: 38px;
+        border: 1px solid rgba(134, 134, 134, 1);
+        border-radius: 50px;
+        background-color: white;
+        color: #5E5E5E;
+        font-size: 16px;
+        &:hover{
+            background-color: #C9C9C9;
+            color: white;
+        }
+    }
+}
+
+.sendBtn{
+    cursor: pointer;
+    margin-top: 20px;
+    margin-bottom: 100px;
+    width: 300px;
+    height: 38px;
+    border: 1px solid #BCBCBC;
+    border-radius: 50px;
+    background-color: #A1A1A1;
+    color: white;
+    font-size: 16px;
+    &:hover{
+        background-color: #C9C9C9;
+        border: 1px solid #C9C9C9;
+    }
+}

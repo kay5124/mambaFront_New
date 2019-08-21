@@ -1,0 +1,220 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <meta charset="utf-8">
+<meta http-equiv="X-UA-Compatible" content="IE=edge">
+<meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=0">
+
+<script type="text/javascript" src="./js/index.js"></script>
+<!-- JQuery -->
+<script type="text/javascript" src="./js/jquery-3.4.1.min.js"></script>
+
+<!-- BootStrap -->
+<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/css/bootstrap.min.css"
+    integrity="sha384-Gn5384xqQ1aoWXA+058RXPxPg6fy4IWvTNh0E263XmFcJlSAwiGgFAW/dAiS6JXm" crossorigin="anonymous">
+<!-- <script src="https://code.jquery.com/jquery-3.2.1.slim.min.js" integrity="sha384-KJ3o2DKtIkvYIK3UENzmM7KCkRr/rE9/Qpg6aAZGJwFDMVNA/GpGFF93hXpG5KkN" crossorigin="anonymous"></script> -->
+<script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.12.9/umd/popper.min.js"
+    integrity="sha384-ApNbgh9B+Y1QKtv3Rn7W3mgPxhU9K/ScQsAP7hUibX39j7fakFPskvXusvfa0b4Q"
+    crossorigin="anonymous"></script>
+<script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/js/bootstrap.min.js"
+    integrity="sha384-JZR6Spejh4U02d8jOt6vLEHfe/JQGiRRSQQxSfFWpi1MquVdAyjUar5+76PVCmYl"
+    crossorigin="anonymous"></script>
+
+<!-- all style -->
+<link id="globalCss" rel="stylesheet" type="text/css" href="./all.min.css" />
+
+    <title>MAMBA</title>
+
+    <script>
+        // var isShowMenu = false;
+        $(document).ready(function () {
+            initPage(location.pathname);
+        });
+
+    </script>
+</head>
+
+<body>
+    <nav id="header">
+    <div class="headbg">
+        <div id="topHead" class="container" style="max-width: 1280px;">
+            <div class="head">
+                <div class="menuDiv">
+                    <img id="menu" width="30px" height="30px" style="display: none;padding: 5px;"
+                        src="./images/menuBtn.png" />
+                </div>
+                <div class="logoDiv">
+                    <img id="logoIcon" onclick="directUrl('/')" src="./images/logo.png" />
+                    <div class="mobileHide useService activeBg" style="margin-left: 73px;">儲值中心</div>
+                    <div class="mobileHide useService">客服中心</div>
+                </div>
+                <div class="userDiv">
+                    <img onclick="directUrl('member')" id="userIcon" src="./images/profileIcon.png" />
+                    <span class="mobileHide member" onclick="directUrl('login')">登入</span>
+                    <span class="mobileHide">|</span>
+                    <span class="mobileHide member" onclick="directUrl('terms')">註冊</span>
+                </div>
+            </div>
+        </div>
+        <div class="mobile_menu">
+            <div class="userService">
+                <div>
+                    <img id="mobile_userIcon" src="./images/profileIcon.png" />
+                    <div style="position: relative;">
+                        <p class="padding">登入</p>
+                        <div class="divline">
+                            <div class="line"></div>
+                        </div>
+                        <p class="padding">註冊</p>
+                    </div>
+                </div>
+                <hr />
+                <div>
+                    <p>儲值中心</p>
+                </div>
+                <hr />
+                <div>
+                    <p>客服中心</p>
+                </div>
+                <hr />
+            </div>
+        </div>
+    </div>
+</nav>
+    <div id="banner">
+    <img class="bannerBg" src="./images/banner.png" />
+</div>
+    <main id="mainContent">
+        <img class="bgLeave" src="./images/bg_leaves.png" />
+        <div class="topDeco">
+            <img src="./images/bg_top_deco.png" />
+        </div>
+        <div class="main container" style="padding:0;">
+            <div class="storeGame">
+    <div class="topTitleDiv">
+        <h5 class="topTitle">Top Up Your Game</h5>
+        <h2>選擇儲值的遊戲</h2>
+    </div>
+    <div class="gameList">
+        <article class="gameDiv">
+            <figure class="gameImgArea">
+                <img class="gameImg" src="./images/game1.png" alt="遊戲圖片" />
+                <img name="onFixing" class="imgFixing hide" src="./images/img_fixing.png" />
+            </figure>
+            <div class="gameNameArea">
+                <h4>元氣封神 KAMISAMA</h4>
+            </div>
+            <div class="serviceBtn">
+                <div class="btn web">遊戲官網</div>
+                <div class="btn store">前往儲值</div>
+            </div>
+        </article>
+        <article class="gameDiv">
+            <figure class="gameImgArea">
+                <img class="gameImg" src="./images/game2.png" alt="遊戲圖片" />
+                <img name="onFixing" class="imgFixing hide" src="./images/img_fixing.png" />
+            </figure>
+            <div class="gameNameArea">
+                <h4>Fate/stay night [Realta Nua]</h4>
+            </div>
+            <div class="serviceBtn">
+                <div class="btn web">遊戲官網</div>
+                <div class="btn store">前往儲值</div>
+            </div>
+        </article>
+        <article class="gameDiv">
+            <figure class="gameImgArea">
+                <img class="gameImg" src="./images/game3.png" alt="遊戲圖片" />
+                <img name="onFixing" class="imgFixing" src="./images/img_fixing.png" />
+            </figure>
+            <div class="gameNameArea">
+                <h4>鎖鏈戰記 CHAIN CHRONICLE</h4>
+            </div>
+            <div class="serviceBtn">
+                <div class="btn web">遊戲官網</div>
+                <div class="btn store hide">前往儲值</div>
+            </div>
+        </article>
+        <article class="gameDiv">
+            <figure class="gameImgArea">
+                <img class="gameImg" src="./images/game4.png" alt="遊戲圖片" />
+                <img name="onFixing" class="imgFixing hide" src="./images/img_fixing.png" />
+            </figure>
+            <!-- <figure class="gameImgArea">
+                <img class="gameImg" src="./images/game4.png" alt="遊戲圖片" />
+                <img name="onFixing" class="imgFixing hide" src="./images/img_fixing.png" />
+            </figure> -->
+            <div class="gameNameArea">
+                <h4>Fate/stay night [Realta Nua]</h4>
+            </div>
+            <div class="serviceBtn">
+                <div class="btn web">遊戲官網</div>
+                <div class="btn store">前往儲值</div>
+            </div>
+        </article>
+        <article class="gameDiv">
+            <figure class="gameImgArea">
+                <img class="gameImg" src="./images/game5.png" alt="遊戲圖片" />
+                <img name="onFixing" class="imgFixing" src="./images/img_fixing.png" />
+            </figure>
+            <div class="gameNameArea">
+                <h4>鎖鏈戰記 CHAIN CHRONICLE</h4>
+            </div>
+            <div class="serviceBtn">
+                <div class="btn web">遊戲官網</div>
+                <div class="btn store hide">前往儲值</div>
+            </div>
+        </article>
+        <article class="gameDiv">
+            <figure class="gameImgArea">
+                <img class="gameImg" src="./images/game1.png" alt="遊戲圖片" />
+                <img name="onFixing" class="imgFixing hide" src="./images/img_fixing.png" />
+            </figure>
+            <div class="gameNameArea">
+                <h4>元氣封神 KAMISAMA</h4>
+            </div>
+            <div class="serviceBtn">
+                <div class="btn web">遊戲官網</div>
+                <div class="btn store">前往儲值</div>
+            </div>
+        </article>
+    </div>
+    <div class="moreGame">
+        <div class="btn">更多遊戲</div>
+    </div>
+</div>
+        </div>
+        <div class="downDeco">
+            <img src="./images/bg_bottom_deco.png" />
+        </div>
+    </main>
+    <footer id="footer">
+    <img class="bg" src='./images/footer_bg.png' />
+    <div class="footer">
+        <img class="footerLogo" src="./images/logo_bottom.png" />
+        <div class="paddingTop">
+            <a class="service" href="#">關於我們</a>
+            <a class="padding service" href="#">隱私群政策</a>
+            <a class="service" href="#">服務條款</a>
+        </div>
+        <div class="paddingTop">
+            <p class="padding contact">
+                <img src="./images/ic_email.png" />
+                service@onmyojigame.com
+            </p>
+            <p class="padding contact">
+                <img src="./images/ic_phone.png" />
+                (02)2706-7199 (服務時間：14:00-22:00，週一至週日)
+            </p>
+            <p class="padding contact">台灣遊戲代理：曼巴互娛有限公司</p>
+        </div>
+        <hr class="hr" />
+        <p class="copyRight" style="padding: 0 20px;">
+            2019 © 曼巴互娛股份有限公司. All Rights Reserved. Design by Begonia Desig
+        </p>
+    </div>
+</footer>
+</body>
+
+</html>

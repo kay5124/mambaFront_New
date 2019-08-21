@@ -1,0 +1,46 @@
+<nav id="header">
+    <div class="headbg">
+        <div id="topHead" class="container" style="max-width: 1280px;">
+            <div class="head">
+                <div class="menuDiv">
+                    <img id="menu" width="30px" height="30px" style="display: none;padding: 5px;"
+                        src="./images/menuBtn.png" />
+                </div>
+                <div class="logoDiv">
+                    <img id="logoIcon" onclick="directUrl('/')" src="./images/logo.png" />
+                    <div class="mobileHide useService activeBg" style="margin-left: 73px;">儲值中心</div>
+                    <div class="mobileHide useService">客服中心</div>
+                </div>
+                <div class="userDiv">
+                    <img onclick="directUrl('member')" id="userIcon" src="./images/profileIcon.png" />
+                    <span class="mobileHide member" onclick="directUrl('login')">登入</span>
+                    <span class="mobileHide">|</span>
+                    <span class="mobileHide member" onclick="directUrl('terms')">註冊</span>
+                </div>
+            </div>
+        </div>
+        <div class="mobile_menu">
+            <div class="userService">
+                <div>
+                    <img id="mobile_userIcon" src="./images/profileIcon.png" />
+                    <div style="position: relative;">
+                        <p class="padding">登入</p>
+                        <div class="divline">
+                            <div class="line"></div>
+                        </div>
+                        <p class="padding">註冊</p>
+                    </div>
+                </div>
+                <hr />
+                <div>
+                    <p>儲值中心</p>
+                </div>
+                <hr />
+                <div>
+                    <p>客服中心</p>
+                </div>
+                <hr />
+            </div>
+        </div>
+    </div>
+</nav>

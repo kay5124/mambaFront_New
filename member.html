@@ -1,0 +1,106 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    @@include('./templete/_head.html')
+
+    <title>MAMBA | 個人資料</title>
+
+    <script>
+        $(document).ready(function () {
+            initPage(location.pathname);
+        });
+    </script>
+
+</head>
+
+<body class="member">
+    @@include('./templete/header/head.html')
+    <div id="banner" class="bannerArea">
+        <img class="bannerBg" src="./images/member_banner.png" />
+    </div>
+    <main id="mainContent">
+        <img class="bgLeaveFull" src="./images/bg_leaves.png" />
+        <div class="topDeco">
+            <img src="./images/bg_top_deco.png" />
+        </div>
+        <div class="main container" style="padding:0;">
+            <div class="userIconDiv">
+                <img class="circleIcon" src="./images/testImg.png" />
+            </div>
+            <div class="topTitleDiv">
+                <h5 class="topTitle" style="color: #F69335;">General Member</h5>
+                <h2>一般會員</h2>
+            </div>
+            <div class="userInfoArea">
+                <article class="info">
+                    <header>
+                        <h5>帳戶資訊</h5>
+                    </header>
+                    <div class="detail">
+                        <table width="100%">
+                            <tr class="infoDetail">
+                                <td>暱稱</td>
+                                <td>王小明</td>
+                            </tr>
+                            <tr class="infoDetail">
+                                <td>帳號</td>
+                                <td>TESTTEST123123</td>
+                            </tr>
+                            <tr class="infoDetail">
+                                <td>Email</td>
+                                <td>a156156****5@gmail.com</td>
+                                <td class="verify">
+                                    <img src="./images/verifyOK.png" />
+                                    <span>已驗證</span>
+                                </td>
+                            </tr>
+                            <tr class="infoDetail">
+                                <td>手機</td>
+                                <td>0900-***-123</td>
+                                <td class="verify">
+                                    <img src="./images/verifyOK.png" />
+                                    <span>已驗證</span>
+                                </td>
+                            </tr>
+                            <tr class="infoDetail">
+                                <td>密碼</td>
+                                <td>*********</td>
+                            </tr>
+                        </table>
+                    </div>
+                </article>
+                <article class="info">
+                    <header>
+                        <h5>會員資訊</h5>
+                    </header>
+                    <div class="detail">
+                        <table>
+                            <tr class="infoDetail">
+                                <td>姓名</td>
+                                <td>-</td>
+                            </tr>
+                            <tr class="infoDetail">
+                                <td>生日</td>
+                                <td>1991/01/01</td>
+                            </tr>
+                            <tr class="infoDetail">
+                                <td>地址</td>
+                                <td>-</td>
+                            </tr>
+                        </table>
+                    </div>
+                </article>
+            </div>
+            <div class="customBtnDiv">
+                <button class="customBtn">修改</button>
+            </div>
+        </div>
+        <div class="downDeco">
+            <img src="./images/bg_bottom_deco.png" />
+        </div>
+    </main>
+    @@include('./templete/footer/footer.html')
+</body>
+
+</html>

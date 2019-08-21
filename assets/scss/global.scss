@@ -1,0 +1,90 @@
+@font-face {
+  font-family: NotoSansCJKtc;
+  src: url("./fonts/NotoSansCJKtc-Regular.otf");
+}
+
+* {
+  font-family: NotoSansCJKtc !important;
+}
+
+h1 {
+  font-size: 60px;
+  @media only screen and (max-width: 767px) {
+    font-size: 36px;
+  }
+}
+
+h2 {
+  font-size: 42px;
+  @media only screen and (max-width: 767px) {
+    font-size: 28px;
+  }
+}
+
+h3 {
+  font-size: 32px;
+  @media only screen and (max-width: 767px) {
+    font-size: 24px;
+  }
+}
+
+h4 {
+  font-size: 24px;
+  @media only screen and (max-width: 767px) {
+    font-size: 20px;
+  }
+}
+
+h5 {
+  font-size: 20px;
+  @media only screen and (max-width: 767px) {
+    font-size: 18px;
+  }
+}
+
+h6 {
+  font-size: 18px;
+  @media only screen and (max-width: 767px) {
+    font-size: 16px;
+  }
+}
+
+p {
+  font-size: 15px;
+}
+
+body {
+  margin: 0;
+  padding: 0;
+  border: 0;
+  overflow-x: hidden;
+  //   height: 100%;
+  //   max-width: 1920px;
+  //   min-width: 1920px;
+}
+
+.hide {
+  display: none !important;
+}
+
+.hideScroll {
+  overflow: hidden;
+}
+
+.customBtnDiv {
+  text-align: center;
+  margin: 50px auto;
+  .customBtn {
+    outline: none;
+    height: 50px;
+    width: 182px;
+    color: white;
+    border-radius: 50px;
+    border: 4px solid #fbcfa6;
+    box-shadow: 0 0 0 4px #fde9d7;
+    background-color: #f69335;
+    &:hover {
+      background-color: #ffa24a;
+    }
+  }
+}
