@@ -1,4 +1,3 @@
-
 function directUrl(route) {
     if ((route == "login" || route == "terms" || route == "register") && !window.location.href.includes("Member")) {
         route = "Member/" + route;
