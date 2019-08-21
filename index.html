@@ -10,6 +10,7 @@
         // var isShowMenu = false;
         $(document).ready(function () {
             initPage(location.pathname);
+            test = 123;
         });
 
     </script>
@@ -17,6 +18,9 @@
 
 <body>
     @@include('./templete/header/head.html')
+    <!-- @@include('./templete/header/head.html',{
+        "title": "jjaskdljskljsadkl"
+    }) -->
     @@include('./templete/banner/banner.html')
     <main id="mainContent">
         <img class="bgLeave" src="./images/bg_leaves.png" />

@@ -10,6 +10,7 @@ function directUrl(route) {
     }
 
 }
+var test = null;
 // 判斷Menu是不是開啟
 var isShowMenu = false;
 

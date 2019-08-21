@@ -41,7 +41,8 @@ gulp.task('default', gulp.series('minify-css', 'uglify', function () {
     gulp.src('./*.html')
         .pipe(fileInclude({
             prefix: '@@',
-            basepath: '@file'
+            basepath: '@file',
+            indent:true//保留文件的缩进
         }))
         .pipe(gulp.dest('./dist'))
 }));
