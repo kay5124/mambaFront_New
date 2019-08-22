@@ -33,14 +33,14 @@ function init_Mobile_Menu_Animate() {
             $("#menu").attr("src", "./images/menu_cancel.png");
             $("html body").addClass("hideScroll");
             $("#userIcon").addClass("hide");
-            $(".mobile_menu").slideDown(350);
+            $(".mobile_menu").slideDown(500);
 
             isShowMenu = true;
         } else {
             $("#menu").attr("src", "./images/menuBtn.png");
             $("html body").removeClass("hideScroll");
             $("#userIcon").removeClass("hide");
-            $(".mobile_menu").slideUp(350);
+            $(".mobile_menu").slideUp(500);
 
             isShowMenu = false;
         }
@@ -49,7 +49,7 @@ function init_Mobile_Menu_Animate() {
         $("#menu").attr("src", "./images/menuBtn.png");
         $("html body").removeClass("hideScroll");
         $("#userIcon").removeClass("hide");
-        $(".mobile_menu").slideUp(350);
+        $(".mobile_menu").slideUp(500);
         isShowMenu = false;
     });
 }
