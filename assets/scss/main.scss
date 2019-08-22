@@ -18,8 +18,17 @@
   .bgLeaveFull {
     z-index: -999999;
     position: absolute;
-    width: 100%;
+    width: 85%;
     height: 100%;
+    top: 35px;
+    left: 154px;
+    @media screen and (max-width: 968px) {
+      height: auto;
+      //   width: 100%;
+      top: 0px;
+      left: 0px;
+      max-width: 100%;
+    }
   }
 }
 
