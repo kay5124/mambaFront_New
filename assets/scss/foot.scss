@@ -5,14 +5,47 @@ footer {
   // background-repeat: no-repeat;
   width: 100%;
   position: relative;
-  padding-bottom: 25px;
+  // padding-bottom: 25px;
+  .downDeco {
+    position: absolute;
+    z-index: -999;
+    top: 0;
+    left: 0;
+    width: 100%;
+    margin-top: -5%;
+    display: block;
+    img {
+      max-width: 100%;
+      height: auto;
+    }
+    @media screen and (max-width: 968px) {
+      display: none;
+    }
+  }
+  .downDeco_mobile {
+    display: none;
+    position: absolute;
+    z-index: -999;
+    top: 0;
+    left: 0;
+    width: 100%;
+    margin-top: -15%;
+    display: block;
+    img {
+      max-width: 100%;
+      height: auto;
+    }
+    @media screen and (max-width: 968px) {
+      display: inline-block;
+    }
+  }
   .bg {
     overflow: hidden;
     position: absolute;
     bottom: 0;
     height: 100%;
     object-fit: cover;
-    z-index: -999;
+    z-index: -99;
     overflow-x: hidden;
     width: 100%;
   }
@@ -20,6 +53,9 @@ footer {
     width: 100%;
     display: inline-block;
     padding-top: 140px;
+    @media only screen and (max-width: 968px) {
+      margin-top: -30px;
+    }
   }
   .footerLogo {
     width: 200px;
@@ -42,7 +78,7 @@ footer {
     @media only screen and (max-width: 968px) {
       display: block !important;
       text-align: left;
-      font-size: 10px;
+      font-size: 12px;
       padding-top: 10px;
     }
   }
@@ -53,11 +89,20 @@ footer {
     }
   }
   .padding {
-    margin: 0 28px;
+    margin: 0 25px;
     display: inline;
   }
   .paddingTop {
     padding-top: 50px;
+    @media only screen and (max-width: 968px) {
+      padding-top: 20px;
+    }
+  }
+  .paddingTop_contact {
+    padding-top: 60px;
+    @media only screen and (max-width: 968px) {
+      padding-top: 20px;
+    }
   }
 }
 
@@ -66,4 +111,7 @@ footer {
   opacity: 0.302;
   height: 1px;
   margin: 25px 0;
+  @media only screen and (max-width: 968px) {
+    margin: 10px 0;
+  }
 }

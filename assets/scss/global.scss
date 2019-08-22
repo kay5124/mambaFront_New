@@ -73,11 +73,15 @@ body {
 
 .customBtnDiv {
   text-align: center;
-  margin: 50px auto;
+  padding-top: 68px;
+  padding-bottom: 173px;
+  @media only screen and (max-width: 968px) {
+    padding-bottom: 120px;
+  }
   .customBtn {
     outline: none;
-    height: 50px;
-    width: 182px;
+    height: 66px;
+    width: 198px;
     color: white;
     border-radius: 50px;
     border: 4px solid #fbcfa6;
