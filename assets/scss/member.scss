@@ -27,7 +27,8 @@
       width: 100%;
       margin-top: 50px;
       @media screen and (max-width: 968px) {
-        width: 90%;
+        // width: 90%;
+        padding: 0 30px;
         margin: 0 auto;
         margin-top: 60px;
         article:first-child {
@@ -54,14 +55,15 @@
           text-align: left;
           line-height: 70px;
           padding-top: 25px;
-          padding-left: 10px;
+          padding-left: 25px;
           display: inline-block;
           width: 101%;
           height: 70px;
           background-image: url("./images/infoHead.png");
           background-repeat: no-repeat;
           background-size: cover;
-          margin-left: -1px;
+          margin-left: -2px;
+          margin-top: -2px;
         }
         .detail {
           // height: 100%;
@@ -70,10 +72,10 @@
           // }
           text-align: left;
           color: #6b6767;
-          padding-left: 10px;
+          padding-left: 21px;
           padding-right: 0;
           margin-left: 1px;
-          font-size: 15px;
+          font-size: 13px;
           table {
             border-collapse: separate;
             border-spacing: 0px 20px;
