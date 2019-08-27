@@ -38,18 +38,21 @@ function init_Mobile_Menu_Animate() {
             isShowMenu = true;
         } else {
             $("#menu").attr("src", "./images/menuBtn.png");
-            $("html body").removeClass("hideScroll");
+            
             $("#userIcon").removeClass("hide");
-            $(".mobile_menu").slideUp(500);
+            $(".mobile_menu").slideUp(500,function(){
+                $("html body").removeClass("hideScroll");
+            });
 
             isShowMenu = false;
         }
     });
     $(".mobile_menu").click(function () {
         $("#menu").attr("src", "./images/menuBtn.png");
-        $("html body").removeClass("hideScroll");
         $("#userIcon").removeClass("hide");
-        $(".mobile_menu").slideUp(500);
+        $(".mobile_menu").slideUp(500,function(){
+            $("html body").removeClass("hideScroll");
+        });
         isShowMenu = false;
     });
 }
