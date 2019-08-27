@@ -2,7 +2,7 @@
 <html>
 
 <head>
-    @@include('./templete/_head.html')
+    @@include('./template/_head.html')
 
     <title>MAMBA</title>
 
@@ -16,11 +16,11 @@
 </head>
 
 <body>
-    @@include('./templete/header/head.html')
-    <!-- @@include('./templete/header/head.html',{
+    @@include('./template/header/head.html')
+    <!-- @@include('./template/header/head.html',{
         "test": "@@include('./../banner/banner.html')"
     }) -->
-    @@include('./templete/banner/banner.html')
+    @@include('./template/banner/banner.html')
     <main id="mainContent">
         <img class="bgLeave" src="./images/index_leaves.png" />
         <img class="bgLeaveFull_mobile" src="./images/index_FullLeaves.png" />
@@ -28,10 +28,10 @@
             <img src="./images/bg_top_deco.png" />
         </div>
         <div class="main container" style="padding:0;">
-            @@include('./templete/Page/storeGameList/storeGameList.html')
+            @@include('./template/Page/storeGameList/storeGameList.html')
         </div>
     </main>
-    @@include('./templete/footer/footer.html')
+    @@include('./template/footer/footer.html')
 </body>
 
 </html>
