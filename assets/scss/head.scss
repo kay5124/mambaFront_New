@@ -88,6 +88,9 @@
     color: white;
     background-image: url("./images/active_bg.png");
     background-size: 100% 100%;
+    &:hover{
+      background-image: url("./images/hover_bg.png");
+    }
   }
 }
 
